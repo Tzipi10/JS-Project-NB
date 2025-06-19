@@ -1,0 +1,26 @@
+body {
+    background-image: url(../../assets/פרסום2-1-576x1024\ \(1\).jpg);
+    background-size:contain;
+    /* opacity: 0.8; */
+    direction: rtl;
+}
+
+.wd-empty-page {
+    font-size: xx-large;
+    font-weight: normal;
+    color: pink;
+}
+
+a {
+    color: white !important;
+}
+
+#isPay {
+    background-color: white;
+    width: 50%;
+    margin: 20%;
+    opacity: 1 !important;
+
+    /* opacity: 50%; */
+    /* background-image: url(../../assets/7efs.gif); */
+}

@@ -1,0 +1,171 @@
+/* עיצוב enter */
+#nameEnter {
+    display: block;
+    width: 200px;
+    height: 30px;
+    color: black;
+    border-radius: 10px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    font-size: 17px;
+    margin: 10%;
+    transition: background 0.5s;
+    direction: rtl;
+}
+
+.loginTitle {
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #f4c0ba;
+}
+
+.login input:focus {
+    outline-width: 0;
+    background: #fbccdc;
+    transition: background 0.5s;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.opacity {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    top: 0;
+    background-color: #111112;
+}
+
+.containerLogin {
+    position: absolute;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    transition: ease-in-out;
+    transition-duration: 2s;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+.login {
+    z-index: 9999;
+    background-color: #ffffff;
+    width: 32%;
+    min-width: 300px;
+    height: 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: big_small ease-in-out none 0.7s infinite;
+    border-radius: 8px;
+    padding: 12px;
+    box-shadow: 4px 4px 4px rgb(229, 185, 185);
+}
+
+
+/* עיצוב ורוד לכפתורים */
+
+/* .buttonPhotograper,
+.buttonMom {
+    width: 200px;
+    height: 40px;
+    border: solid black 1px;
+    border-radius: 30px;
+    box-shadow: 3px 5px 1px rgb(229, 185, 185);
+    margin-left: 10px;
+    margin-bottom: 20%;
+} */
+.buttonPhotograper,
+.buttonMom {
+    width: 200px;
+    height: 40px;
+    border: solid black 1px;
+    border-radius: 30px;
+    box-shadow: 3px 5px 1px rgb(229, 185, 185);
+    margin: 0px 5px 15% 5px;
+    /* //////////.............עדכון..........///////// */
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.buttonPhotograper:hover,
+.buttonMom:hover {
+    width: 210px;
+    height: 45px;
+    box-shadow: none;
+}
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 45% !important;
+    border: none !important;
+}
+
+/* עד כאן עיצוב enter */
+/* #img_home {
+    min-height: 100vh;
+    background-image: url(../../assets/home.jpg) ;
+    background-size: cover;
+    opacity: 0.8;
+} */
+
+#img_home>h1 {
+    font-size: 195px;
+    padding-top: 100px;
+}
+
+#img_home>h1,
+#img_home>p {
+    text-align: center;
+    color: #fffdfb;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 160px;
+}
+
+#img_home>p {
+    font-size: 37px;
+    margin: 0px 0px 14.4px;
+    font-weight: 200;
+    line-height: 29px;
+}
+
+#good {
+    font-weight: 800;
+}
+
+#colorPinkH {
+    background-color: #F4C0BA80 !important;
+    height: 104vh;
+}
+
+video {
+    width: 100%;
+    height: 104vh;
+    display: block;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.8;
+}
+#top-nav {
+    margin-top: -20px;
+}
+/* 
+#images2{
+    background-image: url(../../assets/תמונה.png);
+    background-size: cover;
+    margin-top: 1000px;
+    position: relative;
+    z-index: 9999;
+} */
+
+#images2>img{
+    width: 100%;
+}

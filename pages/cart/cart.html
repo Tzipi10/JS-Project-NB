@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./cart.css">
+    <link rel="stylesheet" href="../../header/header.css">
+    <!-- <link rel="stylesheet" href="../../footer/footer.css"> -->
+    <title>Ayala-NB cart</title>
+
+    <link rel="stylesheet" href="../../packages/fontawesome-free-6.1.1-web/css/all.css" />
+    <link rel="stylesheet" href="../../packages/fontawesome-free-6.1.1-web/css/all.css" />
+    <link rel="stylesheet" href="../../packages/bootstrap-3.4.1-dist/css/bootstrap-theme.css" />
+    <link rel="stylesheet" href="../../packages/bootstrap-3.4.1-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../packages/fontawesome-free-6.1.1-web/css/all.css">
+</head>
+
+<body>
+    <header>
+        <div id="top-nav">
+            <ul class="nav nav-tabs">
+                <a href="../../pages/home/home.html"> <img src="../../assets/logo.png" height="32px"></a>
+
+                <li class="nav-item" id="cart">
+                    <a class="nav-link current" href="./cart.html"> <i class="fa-solid fa-cart-shopping"
+                            id="carticon"></i></a>
+                </li>
+                <div id="openList" class="nav nav-tabs">
+                    <li id="user" class="nav-item">
+                        <a class="nav-link" href="#">להתחברות <i class="fa-solid fa-user"></i></a>
+                    </li>
+                    <li id="blog" class="nav-item">
+                        <a class="nav-link" href="../blog/blog.html">בלוג</a>
+                    </li>
+                    <li id="accessories" class="nav-item">
+                        <a class="nav-link"
+                            href="../accessories/accessories.html?productCategory=accessories">אקססוריז</a>
+                    </li>
+                    <li id="gallery" class="nav-item">
+                        <a class="nav-link" href="../gallery/gallery.html">גלריות</a>
+                    </li>
+                    <li id="about" class="nav-item">
+                        <a class="nav-link" href="../about/about.html">אודות</a>
+                    </li>
+                    <li id="home" class="nav-item">
+                        <a class="nav-link" href="../home/home.html">דף הבית</a>
+                    </li>
+                    <li id="content" class="nav-item">
+                        <a class="nav-link" href="../contact/contact.html">| צור קשר</a>
+                    </li>
+                </div>
+                <li>
+                    <form id="Search" class="nav_item" role="search">
+                        <input id="SearchInput" type="search" placeholder="Search" aria-label="Search">
+                        <i class="fas fa-search" id="Search-icon"></i>
+                    </form>
+                </li>
+                <li>
+                    <div id="list"><i class="fas fa-list"></i></div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- המוצרים שבסל -->
+    <div class="cartTableSection">
+        <table id="cartTable"></table>
+    </div>
+    <!-- דיב סיכום מחיר -->
+    <div class="cartTotals">
+        <div class="cartTotalsInner">
+            <h2>סה"כ בסל הקניות</h2>
+            <table cellspacing="0" class="shopTable">
+                <tbody>
+                    <tr class="shipping">
+                        <th>משלוח</th>
+                        <td data-title="משלוח">
+                            עלויות המשלוח מחושבות במהלך התשלום בקופה.
+                        </td>
+                    </tr>
+                    <tr class="orderTotal">
+                        <th>סה"כ</th>
+                        <td data-title="סה&quot;כ"><strong><span class="woocommercePrice"><bdi><span
+                                            class="woocommerce-Price-currencySymbol">₪</span>subTotal</bdi></span></strong>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="wc-proceed-to-checkout">
+
+                <a href="#" class="checkoutButton">
+                    מעבר לתשלום</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- עידכון -->
+    <!-- <div id="payment"></div> -->
+
+    <!-- פופאפ תשלום -->
+    <div id="overlay"></div>
+    <div id="popup">
+        <button id="close">x</button>
+        <h3>תשלום</h3>
+        <div id="container">
+            <h4>סה"כ לתשלום: </h4>
+            <div id="total">
+            </div>
+        </div>
+        <!-- <br><br> -->
+        <form action="./send.html">
+            <label for="name" class="style">שם</label>
+            <br>
+            <input type="text" id="name" name="name" placeholder="הזן שם" required>
+            <br><br>
+            <label for="email" class="style">אמייל</label >
+            <br>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+            <label for="phone" class="style">טלפון</label>
+            <br>
+            <input type="tel" id="phone" name="phone" required>
+            <br><br>
+            <label for="visa" class="style">פרטי אשראי</label>
+            <br>
+            <input type="text" id="visa" name="visz" required>
+            <br>
+            <img src="../../assets/visaImg.png" alt="" id="visaImg">
+
+        </form>
+        <!-- <a href="../payment/payment.html"></a> -->
+        <button type="submit" id="send" onclick="sendOnclick()">שליחה</button>
+
+    </div>
+    <div id="aRR">
+        <a href="3126430@gmail.com">Copyright 2024 © All rights Reserved. created by - Riki Cohen & Tzipi Levi</a>
+    </div>
+</body>
+<script src="../../packages/jquery-3.2.1.js"></script>
+<script src="../cart/cart.js"></script>
+<script src="../../header/header.js"></script>
+
+</html>

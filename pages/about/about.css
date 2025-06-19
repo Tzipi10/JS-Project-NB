@@ -1,0 +1,35 @@
+#header2 {
+    min-height: 57vh;
+    background-image: url(../../assets/aboutPic.png);
+    display: flex;
+    background-position: center;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+.imgCategorry {
+    min-height: 100vh;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+}
+
+#img1{
+    background-image: url(../../assets/aboutLove.png);
+}
+
+#img2{
+    background-image: url(../../assets/about2.png);
+
+}
+
+@media (max-width: 1100px) {
+    #img1{
+        background-image: url(../../assets/miniAbout.png);
+    }
+    #img2{
+        background-image: url(../../assets/miniAbout2.png);
+    }
+}

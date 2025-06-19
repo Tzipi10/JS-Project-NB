@@ -1,0 +1,153 @@
+#header2 {
+    min-height: 57vh;
+    background-image: url(../../assets/gallery.jpg);
+    display: flex;
+    background-position: center;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#header2>h3 {
+    position: absolute;
+    color: #F6B9BB82;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 164px;
+    font-weight: 900;
+}
+
+#header2>h2 {
+    color: #fffdfb;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 90px;
+    font-weight: 200;
+    z-index: 98;
+}
+
+#imgCategorry {
+    padding-top: 25px;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    height: 75vh;
+    margin-bottom: 480px;
+}
+
+#imgCategorry>a,
+#tAndF>a {
+    text-decoration: none;
+    color: #fffdfb;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 70px;
+    font-weight: 200;
+    border-color: #02010100;
+    text-align: center;
+}
+
+#imgCategorry>a:hover,
+#tAndF>a:hover {
+    color: #fbccdc;
+}
+
+#imgCategorry div {
+    height: 750px;
+    background-position: center;
+    width: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#tAndF div {
+    height: 375px !important;
+    min-width: 660px;
+    margin-left: -360px;
+    margin-top: 0px;
+}
+
+#girls,
+.girls {
+    background-image: url(../../assets/girls.jpg) !important;
+}
+
+#boys,
+.boys {
+    background-image: url(../../assets/boys.jpg) !important;
+    /*עדכון*/
+}
+
+#twins,
+.twins {
+    background-image: url(../../assets/twins.jpg) !important;
+}
+
+#family,
+.family {
+    background-image: url(../../assets/family.jpg) !important;
+}
+
+#header2,
+#girls,
+#boys,
+#twins,
+#family,
+#accessories1 {
+    background-size: cover;
+
+}
+
+/* toTopBtn עיצוב*/
+
+#toTopBtn {
+    display: none;
+    /*עדכון*/
+    margin-left: 95%;
+    margin-top: 5%;
+}
+
+#toTopBtn {
+    font-family: Font Awesome\ 5 Free;
+    font-weight: 900;
+    padding: 3px;
+    background-color: unset;
+    position: sticky;
+    top: 90%;
+    right: 35px;
+    z-index: 99;
+    font-size: 35px;
+    height: 40px;
+    width: 40px;
+    color: white;
+    border: none;
+    border-radius: 50%;
+}
+
+#toTopBtn img {
+    font-family: Font Awesome\ 5 Free;
+    font-weight: 900;
+    padding: 3px;
+    background-color: #F09AA2;
+    position: sticky;
+    top: 90%;
+    right: 35px;
+    z-index: 99;
+    font-size: 35px;
+    height: 40px;
+    width: 40px;
+    color: white;
+    border: none;
+    border-radius: 50%;
+}
+
+#accessories1 {
+    background-image: url(../../assets/accessories/ארנבים_סרוגים.jpg);
+    /*עדכון*/
+    width: 1260px !important;
+    height: 300px !important;
+}
+
+#Search {
+    display: none;
+}
