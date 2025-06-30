@@ -1,7 +1,33 @@
-#wishlist-container{
-    padding-top: 80px;
+#wishlist-container {
+  padding-top: 80px;
 }
 
-#haeder2, .wish{
-      background-image: url(../../assets/wishlist.jpg) !important;
+.wish {
+  background-image: url(../../assets/wishlist.jpg) !important;
+}
+
+.empty-message {
+  text-align: center;
+  margin-top: -60px;
+  color: #777;
+  font-size: xx-large;
+}
+
+.empty-message h3 {
+  color: #f4c0ba;
+  font-weight: bold;
+}
+
+.empty-message img {
+  opacity: 0.7;
+}
+
+.empty-message a {
+  background-color: #f09aa2;
+  border: none;
+  font-size: 20px;
+}
+
+.empty-message a:hover {
+  background-color: #bcb9b9;
 }

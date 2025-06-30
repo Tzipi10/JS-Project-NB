@@ -1,7 +1,7 @@
 function loadWishlist() {
- //עידכון השם ב-התחברות
-  const userNameGallery = sessionStorage.getItem('firstName');
-  const inputNameGallery = document.getElementById('user');
+  //עידכון השם ב-התחברות
+  const userNameGallery = sessionStorage.getItem("firstName");
+  const inputNameGallery = document.getElementById("user");
 
   if (userNameGallery) {
     inputNameGallery.innerHTML = `<a class="nav-link" href="#">${userNameGallery} <i class="fa-solid fa-user"></i></a>`;
@@ -13,6 +13,17 @@ function loadWishlist() {
   const container = document.getElementById("wishlist-container");
   container.innerHTML = "";
 
+  if (wishlist.length === 0) {
+    container.innerHTML = `
+        <div id="empty-wishlist" class="empty-message">
+        <img src="../../assets/empty-heart2.png" alt="אין מועדפים" style="width:150px; height:auto;">
+        <h3>רשימת המשאלות שלך ריקה</h3>
+        <p>כשתאהב מוצרים, הם יופיעו כאן</p>
+        <a href="../gallery/gallery.html" class="btn btn-primary">מעבר לגלריה</a>
+    </div>
+        `;
+    return;
+  }
   wishlist.forEach((id) => {
     const product = products.find((p) => p.id === id);
     if (product) {
@@ -37,10 +48,11 @@ function removeFromWishlist(id) {
   // הסרה מהמועדפים ושמירה מחודשת
   wishlist = wishlist.filter((prodId) => prodId.toString() !== id.toString());
   sessionStorage.setItem("wishlist", JSON.stringify(wishlist));
-
   // הסרה מה־DOM
   const item = document.querySelector(`.product[data-id="${id}"]`);
   if (item) {
     item.remove();
   }
+  loadWishlist();
 }
+
