@@ -1,5 +1,13 @@
 function loadWishlist() {
-  const wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
+ //עידכון השם ב-התחברות
+  const userNameGallery = sessionStorage.getItem('firstName');
+  const inputNameGallery = document.getElementById('user');
+
+  if (userNameGallery) {
+    inputNameGallery.innerHTML = `<a class="nav-link" href="#">${userNameGallery} <i class="fa-solid fa-user"></i></a>`;
+  }
+
+  const wishlist = JSON.parse(sessionStorage.getItem("wishlist")) || [];
   const products = JSON.parse(localStorage.getItem("allProducts")) || [];
 
   const container = document.getElementById("wishlist-container");
@@ -24,11 +32,11 @@ function loadWishlist() {
 }
 
 function removeFromWishlist(id) {
-  let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
+  let wishlist = JSON.parse(sessionStorage.getItem("wishlist")) || [];
 
   // הסרה מהמועדפים ושמירה מחודשת
   wishlist = wishlist.filter((prodId) => prodId.toString() !== id.toString());
-  localStorage.setItem("wishlist", JSON.stringify(wishlist));
+  sessionStorage.setItem("wishlist", JSON.stringify(wishlist));
 
   // הסרה מה־DOM
   const item = document.querySelector(`.product[data-id="${id}"]`);

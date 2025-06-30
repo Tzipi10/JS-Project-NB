@@ -64,3 +64,8 @@ a:hover {
 .heart-selected {
   color: #F09AA2 !important; 
 }
+
+.accessories{
+    background-image: url(../../assets/accessories/ארנבים_סרוגים.jpg) !important;
+
+}

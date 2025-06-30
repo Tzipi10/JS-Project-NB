@@ -213,7 +213,7 @@ if (categoryHeb) {
 // הפונקציה שתרוץ בלחיצה על לב
 function toggleWishlist(productId, element) {
     console.log("toggleWishlist !!!!!!!!!!!!!!")
-  let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
+  let wishlist = JSON.parse(sessionStorage.getItem("wishlist")) || [];
 
   const index = wishlist.indexOf(productId);
 
@@ -227,12 +227,12 @@ function toggleWishlist(productId, element) {
     element.classList.add("far");
   }
 
-  localStorage.setItem("wishlist", JSON.stringify(wishlist));
+  sessionStorage.setItem("wishlist", JSON.stringify(wishlist));
 }
 
 // אפשרות לטעון את הלב כבר מלא אם המוצר נמצא ברשימת המשאלות
 function renderHearts() {
-  const wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
+  const wishlist = JSON.parse(sessionStorage.getItem("wishlist")) || [];
 
   document.querySelectorAll("[data-product-id]").forEach((el) => {
     const id = parseInt(el.dataset.productId);
@@ -247,7 +247,7 @@ function renderHearts() {
 renderHearts();
 
 function updateWishlistIcons() {
-  const wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
+  const wishlist = JSON.parse(sessionStorage.getItem("wishlist")) || [];
   const allHearts = document.querySelectorAll('.fa-heart');
 
   allHearts.forEach(icon => {

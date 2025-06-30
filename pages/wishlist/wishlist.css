@@ -2,3 +2,6 @@
     padding-top: 80px;
 }
 
+#haeder2, .wish{
+      background-image: url(../../assets/wishlist.jpg) !important;
+}
