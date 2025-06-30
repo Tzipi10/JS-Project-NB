@@ -55,11 +55,10 @@ function showMyCart() {
 	      </p>
 		</div>
         `;
-        //---עידכון---כשהסל ריק לא יראו את הדיב של סיכום ולתשלום
+        //כשהסל ריק לא יראו את הדיב של סיכום ולתשלום
        let sumDiv= document.querySelector('.cartTotalsInner');
        sumDiv.style.display='none';
 
-    //    עידכון
     //    let paymentDiv=document.getElementById('payment');
     //    paymentDiv.style.display='none'; 
 
@@ -141,7 +140,6 @@ function showMyCart() {
 showMyCart();
 
 
-// עידכון חשוב
 const paymentBtn=document.querySelector('.wc-proceed-to-checkout');
 // const payment = document.getElementById('payment');
 // const paymentBtn = document.createElement('button')
@@ -180,7 +178,7 @@ paymentBtn.onclick = () => {
 // לחיצה על שליחה
 const send = document.getElementById("send");
 const sendOnclick = () => {
-    alert("ndfgndt ");
+    // alert("נשלח!!! ");
         sessionStorage.setItem(`myCart`, JSON.stringify([]));
         sessionStorage.setItem(`currentBag`, JSON.stringify([]));
 

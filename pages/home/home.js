@@ -48,7 +48,6 @@ setTimeout(() => {
     //     window.location="../gallery/gallery.html";
     // };
 
-    // עידכוןןן
     const buttonPhotograper = document.createElement('button');
     buttonPhotograper.classList.add('wc-proceed-to-checkout');
     buttonPhotograper.classList.add('checkoutButton');
@@ -85,7 +84,7 @@ setTimeout(() => {
             const userName = document.getElementById("user");
             userName.innerHTML = `<a class="nav-link" href="#">${name.value} <i class="fa-solid fa-user"></i></a>`;
             sessionStorage.setItem('firstName', name.value);
-            window.location = "../gallery/gallery.html";
+            window.location = "/pages/gallery/gallery.html";
         }
         else {
             name.placeholder = "שדה חובה!!!!";
@@ -115,7 +114,7 @@ setTimeout(() => {
             const userName = document.getElementById("user");
             userName.innerHTML = `<a class="nav-link" href="#">${name.value} <i class="fa-solid fa-user"></i></a>`;
             sessionStorage.setItem('firstName', name.value);
-            window.location = "../accessories/accessories.html?productCategory=accessories";
+            window.location = "/pages/accessories/accessories.html?productCategory=accessories";
         }
         else {
             name.placeholder = "שדה חובה!!!!";

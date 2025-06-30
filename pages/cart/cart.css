@@ -22,7 +22,6 @@ td>a,
 bdi,
 #quantity_66b22918a01da {
     color: #f4c0ba;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 25px;
 }
 
@@ -71,7 +70,6 @@ td>.remove {
     width: 50px;
     font-weight: 600;
     font-size: 50px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     border: solid #f4c0ba 1.5px;
     border-radius: 30px;
     padding: 0px 10px;
@@ -199,7 +197,6 @@ th {
     direction: rtl;
     background-color: white;
     position: fixed;
-    font-family: Arial, Helvetica, sans-serif;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -224,7 +221,6 @@ th {
 
 #popup h3 {
     margin-top: -6.5%;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
     color: #555555;
 }
@@ -250,7 +246,6 @@ th {
 #email,
 #phone,
 #visa {
-    font-family: Arial, Helvetica, sans-serif;
     width: 36%;
     box-sizing: border-box;
     border: 2px solid #d08e82;
@@ -316,7 +311,6 @@ td>a,
 bdi,
 #quantity_66b22918a01da {
     color: #f4c0ba;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 25px;
 }
 
@@ -375,7 +369,6 @@ td>.remove {
     width: 50px;
     font-weight: 600;
     font-size: 50px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     border: solid #f4c0ba 1.5px;
     border-radius: 30px;
     padding: 0px 10px;
@@ -492,16 +485,12 @@ table tfoot th {
     font-size: 20px;
     margin: 2%;
     /* padding: 12px 20px; */
-    /*עדכון*/
     display: block;
-    /*עדכון*/
     width: 100%;
-    /*עדכון*/
 }
 
 .checkoutButton:hover {
     text-decoration: none;
-    /*עדכון*/
     color: #fff;
 }
 
@@ -538,7 +527,6 @@ th {
     direction: rtl;
     background-color: white;
     position: fixed;
-    font-family: Arial, Helvetica, sans-serif;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -565,7 +553,6 @@ th {
 
 #popup h3 {
     margin-top: -6.5%;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
     color: #555555;
 }
@@ -591,7 +578,6 @@ th {
 #email,
 #phone,
 #visa {
-    font-family: Arial, Helvetica, sans-serif;
     width: 36%;
     box-sizing: border-box;
     border: 2px solid #d08e82;
@@ -606,7 +592,6 @@ th {
     width: 36%;
 }
 
-/* עידכון */
 #send { 
     border: none;
     color: white;
@@ -615,7 +600,6 @@ th {
     height: 35px;
     text-align: center;
     /* padding: 9px 14px 9px 24px; */
-    /* font-family: Arial, Helvetica, sans-serif; */
     margin-top: 3%;
     width: 100%;
     height: 35px;
@@ -625,7 +609,7 @@ th {
 }
 
 #send:hover{
-    text-decoration: none !important;               /*עדכון*/
+    text-decoration: none !important;              
     color: #fff;
     background-color: rgb(219, 219, 219);
 }

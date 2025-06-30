@@ -1,91 +1,102 @@
 #header2 {
-    min-height: 57vh;
-    background-image: url(../../assets/gallery.jpg);
-    display: flex;
-    background-position: center;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
+  min-height: 57vh;
+  background-image: url(../../assets/gallery.jpg);
+  display: flex;
+  background-position: center;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-size: cover;
+  overflow: hidden;
 }
 
-#header2>h3 {
-    position: absolute;
-    color: #F6B9BB82;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 164px;
-    font-weight: 900;
+#header2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color:#f4c0ba;
+  opacity: 0.4;
+  z-index: 1;
 }
 
-#header2>h2 {
-    color: #fffdfb;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 90px;
-    font-weight: 200;
-    z-index: 98;
+#header2 > h3 {
+  position: absolute;
+  color: #f6b9bb82;
+  font-size: 164px;
+  /* font-weight: 100; */
+}
+
+#header2 > h2 {
+  color: #fffdfb;
+  font-size: 90px;
+  font-weight: 200;
+  z-index: 98;
 }
 
 #imgCategorry {
-    padding-top: 25px;
-    display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
-    height: 75vh;
-    margin-bottom: 480px;
+  padding-top: 25px;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  height: 75vh;
+  margin-bottom: 480px;
 }
 
-#imgCategorry>a,
-#tAndF>a {
-    text-decoration: none;
-    color: #fffdfb;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 70px;
-    font-weight: 200;
-    border-color: #02010100;
-    text-align: center;
+#imgCategorry > a,
+#tAndF > a {
+  text-decoration: none;
+  color: #fffdfb;
+  font-size: 70px;
+  font-weight: 200;
+  border-color: #02010100;
+  text-align: center;
 }
 
-#imgCategorry>a:hover,
-#tAndF>a:hover {
-    color: #fbccdc;
+#imgCategorry > a:hover,
+#tAndF > a:hover {
+  color: #fbccdc;
 }
 
 #imgCategorry div {
-    height: 750px;
-    background-position: center;
-    width: 300px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  height: 750px;
+  background-position: center;
+  width: 300px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 #tAndF div {
-    height: 375px !important;
-    min-width: 660px;
-    margin-left: -360px;
-    margin-top: 0px;
+  height: 375px !important;
+  min-width: 660px;
+  margin-left: -360px;
+  margin-top: 0px;
 }
 
 #girls,
 .girls {
-    background-image: url(../../assets/girls.jpg) !important;
+  background-image: url(../../assets/girls.jpg) !important;
 }
 
 #boys,
 .boys {
-    background-image: url(../../assets/boys.jpg) !important;
-    /*עדכון*/
+  background-image: url(../../assets/boys.jpg) !important;
 }
 
 #twins,
 .twins {
-    background-image: url(../../assets/twins.jpg) !important;
+  background-image: url(../../assets/twins.jpg) !important;
 }
 
 #family,
 .family {
-    background-image: url(../../assets/family.jpg) !important;
+  background-image: url(../../assets/family.jpg) !important;
 }
 
 #header2,
@@ -94,60 +105,149 @@
 #twins,
 #family,
 #accessories1 {
-    background-size: cover;
-
+  background-size: cover;
 }
 
 /* toTopBtn עיצוב*/
 
 #toTopBtn {
-    display: none;
-    /*עדכון*/
-    margin-left: 95%;
-    margin-top: 5%;
-}
-
-#toTopBtn {
-    font-family: Font Awesome\ 5 Free;
-    font-weight: 900;
-    padding: 3px;
-    background-color: unset;
-    position: sticky;
-    top: 90%;
-    right: 35px;
-    z-index: 99;
-    font-size: 35px;
-    height: 40px;
-    width: 40px;
-    color: white;
-    border: none;
-    border-radius: 50%;
+  display: none;
+  margin-left: 95%;
+  margin-top: 5%;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  padding: 3px;
+  background-color: unset;
+  position: fixed;
+  bottom: 30px;
+  right: 35px;
+  z-index: 99;
+  font-size: 35px;
+  height: 40px;
+  width: 40px;
+  color: white;
+  border: none;
+  border-radius: 50%;
 }
 
 #toTopBtn img {
-    font-family: Font Awesome\ 5 Free;
-    font-weight: 900;
-    padding: 3px;
-    background-color: #F09AA2;
-    position: sticky;
-    top: 90%;
-    right: 35px;
-    z-index: 99;
-    font-size: 35px;
-    height: 40px;
-    width: 40px;
-    color: white;
-    border: none;
-    border-radius: 50%;
+  font-family: Font Awesome\5 Free;
+  font-weight: 900;
+  padding: 3px;
+  background-color: #f09aa2;
+  position: sticky;
+  top: 90%;
+  right: 35px;
+  z-index: 99;
+  font-size: 35px;
+  height: 40px;
+  width: 40px;
+  color: white;
+  border: none;
+  border-radius: 50%;
 }
 
 #accessories1 {
-    background-image: url(../../assets/accessories/ארנבים_סרוגים.jpg);
-    /*עדכון*/
-    width: 1260px !important;
-    height: 300px !important;
+  background-image: url(../../assets/accessories/ארנבים_סרוגים.jpg);
+  width: 1260px !important;
+  height: 300px !important;
 }
 
 #Search {
-    display: none;
+  display: none;
+}
+
+/*  */
+/* #allProducts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding: 40px;
+  background-color: #fffaf8;
+}
+
+#divpr {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+
+#prodImg:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+#prodImg {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  object-fit: cover;
+}
+
+#divpr:hover #prodImg {
+  transform: scale(1.03);
+}
+
+/* שם המוצר */
+#nameP {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 10px 0 6px;
+  color: #4a4a4a;
+  text-align: center;
+}
+
+/* קו תחתון: מחיר + אייקונים */
+#bottomicons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 6px;
+  /* gap: 10px; */
+}
+
+/* מחיר */
+#price {
+  margin: 0;
+  font-size: 20px;
+  color: #f09aa2;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+#price i.fa-shekel-sign {
+  font-size: 14px;
+  line-height: 1;
+  vertical-align: baseline;
+}
+
+/* עגלה ולב */
+#bottomicons a,
+#bottomicons i:not(.fa-shekel-sign) {
+  font-size: 20px;
+  color: #888;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+#bottomicons a:hover,
+#bottomicons i:hover:not(.fa-shekel-sign) {
+  color: #f09aa2;
+}
+
+.cartIcon:hover i,
+.fa-heart:hover {
+  transform: scale(1.2);
+  transition: transform 0.2s ease;
 }

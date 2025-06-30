@@ -119,13 +119,15 @@
 
 #top-nav>ul>a>img {
     padding-right: 0 !important;
-    height: 40px;
+    height: 30px;
 }
 
 #top-nav>ul {
     border: none;
     display: flex;
     justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 #top-nav>ul>li {
@@ -135,8 +137,7 @@
 
 .nav-item {
     width: 150px;
-    font-size: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif sans-serif;
+    font-size: 22px;
     text-align: center;
     /* margin-top: 8px; */
 }
@@ -146,6 +147,10 @@
     display: flex;
     justify-content: center;
     border: none;
+}
+
+#content .nav-link {
+  font-weight: 500;
 }
 
 .nav-link {
@@ -173,16 +178,35 @@
 }
 
 #cart {
-    /* margin-top: 0%; */
-    width: 30px;
-    padding: 0px !important;
-    margin: 0px !important;
-    /* animation-name: color-animation3;
+    /* padding: 0px !important;
+    margin: 0px !important;  */
+       /* animation-name: color-animation3;
     animation-duration: 1s;
     animation-delay: 1s;
     animation-iteration-count: infinite;
     animation-direction: normal; */
 }
+
+#cart {
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 0; 
+  margin: 0 20px !important;
+}
+#cart a {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  height: 100%;
+}
+#carticon {
+  font-size: 20px;
+  line-height: 1;
+  vertical-align: middle;
+}
+
 
 /* #cart:hover {
     opacity: 100% ;
@@ -284,7 +308,72 @@
 
 }
 
-p {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+@font-face {
+  font-family: 'Almoni';
+  src: url('../../assets/fonts/almoni-light-aaa.woff2') format('woff2');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Almoni';
+  src: url('../assets/fonts/almoni-medium-aaa.woff2') format('woff2');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Almoni';
+  src: url('../assets/fonts/almoni-bold-aaa.woff2') format('woff2');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Almoni Tzar';
+  src: url('../assets/fonts/almoni-tzar-medium-aaa.woff2') format('woff2');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Almoni Tzar';
+  src: url('../assets/fonts/almoni-tzar-ultrabold-aaa.woff2') format('woff2');
+  font-weight: 900;
+}
+
+* {
+  font-family: 'Almoni', sans-serif;
+  font-weight: 300; 
+  box-sizing: border-box;
+}
+
+h1, h2 {
+  font-family: 'Almoni Tzar', sans-serif;
+  font-weight: 900; 
+  line-height: 1.2;
+}
+
+h3, h4, h5, h6,
+button, .btn, .main-link {
+  font-family: 'Almoni', sans-serif;
+  font-weight: 500; 
+}
+
+p, a, li, label, span, input, select, textarea, th, td {
+  font-family: 'Almoni', sans-serif;
+  font-weight: 300;
+}
+
+/* אם יש לך קלאס לדברים מיוחדים או מודגשים */
+.strong, .important, .highlight {
+  font-family: 'Almoni Tzar', sans-serif;
+  font-weight: 900; 
+}
+
+i,
+.fas,
+.far,
+.fab,
+.fa,
+[class^="fa-"],
+[class*=" fa-"] {
+  font-family: "Font Awesome 6 Free" !important;
+  font-weight: 900;
 }

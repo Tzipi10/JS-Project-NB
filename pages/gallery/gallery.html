@@ -22,10 +22,15 @@
     <header>
         <div id="top-nav">
             <ul class="nav nav-tabs">
-                <a href="../../pages/home/home.html"> <img src="../../assets/logo.png" height="32px"></a>
+                <a href="../../index.html"> <img src="../../assets/logo.png" height="32px"></a>
                 <li class="nav-item" id="cart">
                     <a class="nav-link" href="../cart/cart.html"> <i class="fa-solid fa-cart-shopping"
                             id="carticon"></i></a>
+                </li>
+                <li class="nav-item" id="heart">
+                  <a class="nav-link" href="../../pages/wishlist/wishlist.html" title="רשימת המשאלות">
+                     <i class="fas fa-heart"></i>
+                  </a>
                 </li>
                 <div id="openList" class="nav nav-tabs">
                     <li id="user" class="nav-item">
@@ -42,7 +47,7 @@
                         <a class="nav-link" href="../about/about.html">אודות</a>
                     </li>
                     <li id="home" class="nav-item">
-                        <a class="nav-link" href="../home/home.html">דף הבית</a>
+                        <a class="nav-link" href="../../index.html">דף הבית</a>
                     </li>
                     <li id="content" class="nav-item">
                         <a class="nav-link" href="../contact/contact.html">|צור קשר</a>
@@ -61,7 +66,7 @@
         </div>
     </header>
     <div id="header2">
-        <h3>New Born</h3>
+        <h3 class="strong">New Born</h3>
         <h2>גלרייה</h2>
     </div>
     <div></div>
@@ -78,7 +83,7 @@
     <div id="box"> </div>
 
     <!-- מיון לפי -->
-    <select name="sortSelect" id="sortSelect" class="fas fa-search">
+    <select name="sortSelect" id="sortSelect">
         <option value="">מיין לפי</option>
     </select>
     <!-- כאן מוצגים המוצרים -->

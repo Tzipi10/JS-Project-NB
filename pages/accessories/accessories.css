@@ -1,45 +1,66 @@
 #divpr {
-    /* padding-top: 350px; */
-    /* display: flex; */
-    /* flex-wrap: wrap; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    margin: 20px;
-    width: 350px;
+  /* padding-top: 350px; */
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  margin: 20px;
+  width: 350px;
 }
 
-#allProducts{
-    /* width: 88%; */
-    display: flex; 
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 0px;
+#allProducts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0px;
+  margin: 0;
+  column-count: 3;
+  margin: auto;
+  /* column-count: 3;
+  column-gap: 16px;
+  max-width: 1000px;
+  margin: auto;
+  padding: 0; */
 }
 
 #prodImg {
-    width: 320px;
-
+  /* width: 320px; */
+  /* width: 100%; */
+  height: 213px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  /* display: block;
+  break-inside: avoid; */
 }
 
 #sortSelect {
-    display: none;
-    margin: 0px 0px 0px 87%;                       
-    width: 180px;
-    height: 45px;
-    border: solid black 1px;
-    border-radius: 30px;
-    box-shadow: 7px 7px 1px #f4c0ba;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-    direction: rtl;
-    position: fixed;
-    position: sticky;                                     
+  display: none;
+  position: sticky;
+  top: 100px; 
+  width: 180px;
+  height: 45px;
+  direction: rtl;
+  color: white;
+  font-size: 22px;
+  background-color: #f4c0ba;
+  border: none;
+  border-radius: 3px;
+  font-family: 'Almoni', sans-serif;
+  margin-left: auto; 
+  margin-right: 20px; 
+  margin-top: 10px;
+  z-index: 10; 
 }
 
-.cartIcon{
+
+/* .cartIcon{
     color:black !important;
+} */
+
+a:hover {
+  text-decoration: none;
 }
 
-a:hover{
-    text-decoration: none;
+.heart-selected {
+  color: #F09AA2 !important; 
 }
