@@ -60,15 +60,6 @@ https://cohen3126430.github.io/js-NB-Project
 
 ---
 
-## 🚫 כשאין מוצרים ברשימת המשאלות
-
-בעת שרשימת המשאלות ריקה מוצגת הודעה ותמונה סימבולית (לב שקוף):
-
-- ניתן לעדכן את הקובץ:  
-  `assets/empty-wishlist.png`
-
----
-
 ## 🚀 איך להריץ מקומית
 
 1. לפתוח את הקובץ `index.html` ב- VS CODE.
