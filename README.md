@@ -49,17 +49,6 @@ https://cohen3126430.github.io/js-NB-Project
 
 ---
 
-## 📂 קבצים חשובים
-
-- `data/products.json` – כל המוצרים
-- `wishlist.js` – ניהול רשימת המשאלות
-- `gallery.html` – תצוגת גלריה עם אייקון לב
-- `wishlist.html` – רשימת המשאלות עם אפשרות להסרה
-- `cart.html` – סל הקניות עם כפתורי כמות
-- `productShow.html` – תצוגת פרטי מוצר בודד
-
----
-
 ## 🚀 איך להריץ מקומית
 
 1. לפתוח את הקובץ `index.html` ב- VS CODE.
