@@ -18,7 +18,7 @@ function loadWishlist() {
         <div id="empty-wishlist" class="empty-message">
         <img src="../../assets/empty-heart2.png" alt="אין מועדפים" style="width:150px; height:auto;">
         <h3>רשימת המשאלות שלך ריקה</h3>
-        <p>כשתאהב מוצרים, הם יופיעו כאן</p>
+        <p>כשתאהבי מוצרים, הם יופיעו כאן</p>
         <a href="../gallery/gallery.html" class="btn btn-primary">מעבר לגלריה</a>
     </div>
         `;
