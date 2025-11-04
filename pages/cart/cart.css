@@ -544,11 +544,17 @@ th {
 }
 
 #close {
-    background-color: transparent;
-    border: none;
-    font-size: 25px;
-    color: #555555;
-    margin-right: 95%;
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  color: #555;
+  margin-right: 95%;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+#close:hover {
+  color: #d08e82;
 }
 
 #popup h3 {
@@ -565,7 +571,8 @@ th {
 #total {
     color: #555555;
     margin-top: -6.2%;
-    margin-right: 17%;
+    margin-right: 12%;
+    font-size: 20px;
 }
 
 .style {

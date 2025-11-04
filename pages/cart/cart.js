@@ -178,14 +178,21 @@ paymentBtn.onclick = () => {
 // לחיצה על שליחה
 const send = document.getElementById("send");
 const sendOnclick = () => {
-    // alert("נשלח!!! ");
-        sessionStorage.setItem(`myCart`, JSON.stringify([]));
-        sessionStorage.setItem(`currentBag`, JSON.stringify([]));
+    const form = document.querySelector("form");
 
-        cartTable.innerHTML = getTable();
-        closePopup();
-        window.location="../payment/payment.html";
-}
+    // הפעלת הולידציה מובנית של הדפדפן:
+    if (!form.reportValidity()) {
+        return; // אם יש שגיאה, עצרי את ההמשך
+    }
+
+    // המשך קוד השליחה:
+    sessionStorage.setItem(`myCart`, JSON.stringify([]));
+    sessionStorage.setItem(`currentBag`, JSON.stringify([]));
+    cartTable.innerHTML = getTable();
+    closePopup();
+    window.location = "../payment/payment.html";
+};
+
 
 // הצגת הפופאפ
 const showPopup = () => {

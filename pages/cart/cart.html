@@ -15,6 +15,11 @@
     <link rel="stylesheet" href="../../packages/bootstrap-3.4.1-dist/css/bootstrap-theme.css" />
     <link rel="stylesheet" href="../../packages/bootstrap-3.4.1-dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../../packages/fontawesome-free-6.1.1-web/css/all.css">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+/>
+
 </head>
 
 <body>
@@ -27,18 +32,18 @@
                     <a class="nav-link current" href="./cart.html"> <i class="fa-solid fa-cart-shopping"
                             id="carticon"></i></a>
                 </li>
-                 <li class="nav-item" id="heart">
-                  <a class="nav-link" href="../../pages/wishlist/wishlist.html" title="רשימת המשאלות">
-                     <i class="fas fa-heart"></i>
-                  </a>
+                <li class="nav-item" id="heart">
+                    <a class="nav-link" href="../../pages/wishlist/wishlist.html" title="רשימת המשאלות">
+                        <i class="fas fa-heart"></i>
+                    </a>
                 </li>
                 <div id="openList" class="nav nav-tabs">
                     <li id="user" class="nav-item">
                         <a class="nav-link" href="#">להתחברות <i class="fa-solid fa-user"></i></a>
                     </li>
-                    <li id="blog" class="nav-item">
+                    <!-- <li id="blog" class="nav-item">
                         <a class="nav-link" href="../blog/blog.html">בלוג</a>
-                    </li>
+                    </li> -->
                     <li id="accessories" class="nav-item">
                         <a class="nav-link"
                             href="../accessories/accessories.html?productCategory=accessories">אקססוריז</a>
@@ -106,7 +111,10 @@
     <!-- פופאפ תשלום -->
     <div id="overlay"></div>
     <div id="popup">
-        <button id="close">x</button>
+        <button id="close">
+            <i class="bi-x-lg"></i>
+        </button>
+
         <h3>תשלום</h3>
         <div id="container">
             <h4>סה"כ לתשלום: </h4>
@@ -117,25 +125,29 @@
         <form action="./send.html">
             <label for="name" class="style">שם</label>
             <br>
-            <input type="text" id="name" name="name" placeholder="הזן שם" required>
+            <input type="text" id="name" name="name" placeholder="הזן שם" required pattern="[A-Za-zא-ת\s]{2,}"
+                title="יש להזין לפחות 2 תווים באותיות בלבד">
             <br><br>
-            <label for="email" class="style">אמייל</label >
+            <label for="email" class="style">אמייל</label>
             <br>
             <input type="email" id="email" name="email" required>
             <br><br>
             <label for="phone" class="style">טלפון</label>
             <br>
-            <input type="tel" id="phone" name="phone" required>
+            <input type="tel" id="phone" name="phone" required pattern="[0-9]{9,10}"
+                title="יש להזין מספר טלפון תקין (9–10 ספרות)">
             <br><br>
             <label for="visa" class="style">פרטי אשראי</label>
             <br>
-            <input type="text" id="visa" name="visz" required>
+            <input type="text" id="visa" name="visa" required pattern="[0-9]{16}"
+                title="יש להזין 16 ספרות של כרטיס אשראי תקין">
             <br>
             <img src="../../assets/visaImg.png" alt="" id="visaImg">
 
         </form>
-        <!-- <a href="../payment/payment.html"></a> -->
         <button type="submit" id="send" onclick="sendOnclick()">שליחה</button>
+
+        <!-- <a href="../payment/payment.html"></a> -->
 
     </div>
     <div id="aRR">

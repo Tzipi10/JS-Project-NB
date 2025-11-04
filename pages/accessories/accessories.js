@@ -141,7 +141,7 @@ const addToCart = (productId) => {
   // const cartIcon = document.getElementById(`#${productId}`);
   cartIcon.classList = "fas fa-thumbs-up";
   cartIcon.innerHTML = "  נוסף לסל";
-  cartIcon.style.color = "#333";
+  cartIcon.style.color = "#333 !important";
   cartIcon.style.textDecoration = "none";
 
   // cartIcon.style.fontFamily= system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
