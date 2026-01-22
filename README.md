@@ -41,7 +41,6 @@ https://cohen3126430.github.io/js-NB-Project
 ---
 
 ## ⚙️ טכנולוגיות בשימוש
-
 - HTML5, CSS3, JavaScript
 - jQuery לטעינת נתונים דינמית
 - Bootstrap 3.4 ו־FontAwesome לאייקונים ועיצוב
